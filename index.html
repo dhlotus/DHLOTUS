@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title translate="no">LOTUS</title>
+    <meta name="description" content="My personal space where I share my passions, inspirations, and spiritual journey" />
+    <meta name="author" content="Lotus" />
+    <meta property="og:image" content="/images/og-image.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="icon" href="./assets/images/logo.png">
+  </head>
+  
+  <body>
+    <header id="header" class="fixed-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-container">
+            <img src="./assets/images/logo.png" alt="Lotus Logo" class="logo-img" />
+            <span class="logo-text" translate="no">LOTUS</span>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#home" class="nav-link">Trang chủ</a></li>
+              <li><a href="#gallery" class="nav-link">Mình nè</a></li>
+              <li><a href="#social" class="nav-link">Liên kết</a></li>
+              <li><a href="#buddhism" class="nav-link">Phật Giáo</a></li>
+              <li><a href="#idols" class="nav-link">Fan ai nhỉ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section --> 
+      <section id="home" class="hero-section">
+        <div class="radial-bg"></div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-logo animate fade-in">
+              <div class="lotus-glow"></div>
+              <div class="lotus-container">
+                <img src="./assets/images/logo.png" alt="Lotus Logo" class="hero-lotus-logo" />
+              </div>
+            </div>
+            
+            <h1 class="hero-title animate fade-in-delay-1">
+              <span class="gradient-text" translate="no">LOTUS</span> 
+            </h1>
+
+            <p class="hero-description animate fade-in-delay-2">
+              Vì yêu mà đến, đến rồi càng yêu
+            </p>
+            
+            <div class="hero-cta animate fade-in-delay-4">
+              <a href="#gallery" class="explore-button">
+                <span>Tiếp nào</span>
+                <svg class="icon-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="scroll-indicator animate fade-in-delay-4">
+          <svg class="icon-arrow-down none-lt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+      </section>
+    <!-- phát nhạc -->  
+      <div class="container music">
+        <div class="music-player">
+            <img src="./assets/images/ai.gif" alt="Album Art">
+            <h3>Nghe chút nhạc cho chill nào</h3>
+            <audio controls>
+                <source src="./assets/images/mussic.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hỗ trợ phát nhạc.
+            </audio>
+          </div>
+      </div>
+          
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2 class="section-heading animate-on-scroll">Một vài </h2>
+          
+          <div class="gallery-grid">
+            <div class="featured-image animate-on-scroll delay-1">
+              <div class="image-overlay"></div>
+              <div class="featured-image-container">
+                <img src="./assets/images/ac4.png" alt="Personal Image 1" class="active" data-index="0">
+                <img src="./assets/images/ac3.png" alt="Personal Image 2" data-index="1">
+                <img src="./assets/images/ac2.png" alt="Personal Image 3" data-index="2">
+                <img src="./assets/images/ac1.png" alt="Personal Image 4" data-index="3">
+              </div>
+            </div>
+            
+            <div class="thumbnail-grid animate-on-scroll delay-2">
+              <div class="thumbnail active" data-index="0">
+                <img src="./assets/images/ac4.png" alt="Personal Image 1">
+              </div>
+              <div class="thumbnail" data-index="1">
+                <img src="./assets/images/ac3.png" alt="Personal Image 2">
+              </div>
+              <div class="thumbnail" data-index="2">
+                <img src="./assets/images/ac2.png" alt="Personal Image 3">
+              </div>
+              <div class="thumbnail" data-index="3">
+                <img src="./assets/images/ac1.png" alt="Personal Image 4">
+              </div>
+            </div>
+          </div>
+          
+          <div class="gallery-dots animate-on-scroll delay-3">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+            <button class="dot" data-index="3"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Links Section -->
+      <section id="social" class="social-section">
+        <div class="gradient-overlay top"></div>
+        <div class="gradient-overlay bottom"></div>
+        
+        <div class="decorative-circle top-right"></div>
+        <div class="decorative-circle bottom-left"></div>
+        
+        <div class="container">
+          <h2 class="section-heading animate-on-scroll">Liên kết</h2>
+          
+          <p class="section-description animate-on-scroll delay-1">
+            Nhấn vào ngay để trở thành những người anh em của tôi nào
+          </p>
+          
+          <div class="social-grid">
+            <div class="social-card">
+             <div class="social-card-bg facebook-bg"></div>
+             
+             <div class="social-card-content">
+               <div class="social-logo-wrapper">
+                 <div class="social-logo-bg facebook-glow"></div>
+                 <img src="./assets/images/social/facebook.svg" alt="Facebook Logo" class="social-logo">
+               </div>
+               <div class="social-info">
+                 <h3 class="social-name">Facebook</h3>
+                 <p class="social-username">Bùi Đức Hà</p>
+               </div>
+             </div>
+             
+             <a href="https://www.facebook.com/bdh.lotus/" target="_blank" rel="noopener noreferrer" class="social-follow facebook-btn">
+               <span>Kết bạn</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+             </a>
+           </div>
+           
+           <div class="social-card">
+            <div class="social-card-bg zalo-bg"></div>
+            <div class="social-card-content">
+              <div class="social-logo-wrapper">
+                <div class="social-logo-bg mess-glow"></div>
+                <img src="./assets/images/social/mess.svg" alt="Zalo Logo" class="social-logo">
+              </div>
+              <div class="social-info">
+                <h3 class="social-name">Messenger</h3>
+                <p class="social-username">Bùi Đức Hà</p>
+              </div>
+            </div>
+            
+            <a href="https://m.me/bdh.lotus" target="_blank" rel="noopener noreferrer" class="social-follow mess-btn">
+              <span>Nhắn tin</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+
+           <div class="social-card">
+             <div class="social-card-bg tiktok-bg"></div>
+             <div class="social-card-content">
+               <div class="social-logo-wrapper">
+                 <div class="social-logo-bg tiktok-glow"></div>
+                 <img src="./assets/images/social/tiktok.svg" alt="TikTok Logo" class="social-logo">
+               </div>
+               <div class="social-info">
+                 <h3 class="social-name">TikTok</h3>
+                 <p class="social-username">@_sgbdha__</p>
+               </div>
+             </div>
+             
+             <a href="https://www.tiktok.com/@_sgbdha__" target="_blank" rel="noopener noreferrer" class="social-follow tiktok-btn">
+               <span>Follow</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+             </a>
+           </div>
+           
+           <div class="social-card">
+             <div class="social-card-bg zalo-bg"></div>
+             <div class="social-card-content">
+               <div class="social-logo-wrapper">
+                 <div class="social-logo-bg zalo-glow"></div>
+                 <img src="./assets/images/social/zalo.svg" alt="Zalo Logo" class="social-logo">
+               </div>
+               <div class="social-info">
+                 <h3 class="social-name">Zalo</h3>
+                 <p class="social-username">Bùi Đức Hà</p>
+               </div>
+             </div>
+             
+             <a href="https://zalo.me/0332426909" target="_blank" rel="noopener noreferrer" class="social-follow zalo-btn">
+               <span>Kết bạn</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+             </a>
+           </div>
+
+         </div>
+        </div>
+      </section>
+
+      <!-- Buddhism Section -->
+      <section id="buddhism" class="buddhism-section">
+        <div class="decorative-circle top-right"></div>
+        <div class="decorative-circle bottom-left"></div>
+        
+        <div class="container">
+          <h2 class="section-heading animate-on-scroll">Mình là đệ tử của Phật</h2>
+          
+          <div class="buddhism-content">
+            <div class="buddhism-text animate-on-scroll delay-1">
+              <p class="buddhism-paragraph">
+                Phật giáo không chỉ là một tôn giáo, mà còn là con đường trí tuệ và giác ngộ. Từ bi và trí tuệ là hai giá trị cốt lõi, giúp con người vượt qua vô minh, khổ đau để tìm về an lạc và giải thoát. Đức Phật là bậc Thầy vĩ đại, Người đã chỉ ra con đường Trung đạo, con đường của sự cân bằng, tỉnh thức và lòng từ bi vô lượng đối với tất cả chúng sinh.
+              </p>
+              
+              <blockquote class="buddhism-quote">
+                "Hãy tự mình thắp đuốc lên mà đi."<br> - Đức Phật Thích Ca Mâu Ni
+              </blockquote>
+              
+              <p class="buddhism-paragraph">
+                Đạo Phật xuất hiện hơn 2500 năm trước tại Ấn Độ, do Thái tử Tất Đạt Đa giác ngộ và trở thành Đức Phật Thích Ca. Giáo lý của Ngài xoay quanh Tứ Diệu Đế — chân lý về khổ đau và con đường chấm dứt khổ đau. Đạo Phật hướng con người sống tỉnh thức, từ bi và trí tuệ.
+              </p>
+              
+              <p class="buddhism-paragraph">
+                Phật dạy, kẻ thù lớn nhất không phải ai khác, mà chính là tâm tham lam, sân hận và si mê trong mỗi người. Thắng được chính mình là chiến thắng vẻ vang nhất. Vì chỉ khi làm chủ được tâm mình, con người mới thật sự tìm thấy tự do và hạnh phúc.
+              </p>
+            </div>
+            
+            <div class="buddhism-images animate-on-scroll delay-2">
+              <div class="buddhism-image-container">
+                <img src="./assets/images/ducphat.png" alt="Buddhist Temple" class="buddhism-image animate-on-scroll delay-2" />
+              </div>
+              <div class="buddhism-image-container">
+                <img src="./assets/images/botat.png" alt="Buddha Statue" class="buddhism-image animate-on-scroll delay-3" />
+              </div>
+              <div class="buddhism-image-container">
+                <img src="./assets/images/papgda.jpg" alt="Lotus Flower" class="buddhism-image animate-on-scroll delay-4" />
+              </div>
+              <div class="buddhism-image-container">
+                <img src="./assets/images/cmy3.png" alt="Meditation" class="buddhism-image animate-on-scroll delay-5" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="noble-truths animate-on-scroll delay-4">
+            <h3 class="noble-truths-title">Nam Mô Bổn Sư Thích Ca Mâu Ni Phật</h3>
+            <ol class="noble-truths-list">
+              <li>Phật là thầy, không phải thần linh</li>
+              <li>Niệm Phật một câu, phước sanh vô lượng. Lễ Phật một lạy, tội diệt hà sa.</li>
+              <li>Tin Phật không phải để cầu xin, mà để học làm người tỉnh thức.</li>
+              <li>Đạo Phật không dạy sợ hãi, mà dạy hiểu và thương.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Idols Section -->
+      <section id="idols" class="idols-section">
+        <div class="container">
+          <h2 class="section-heading animate-on-scroll">Idols nè</h2>
+          
+          <p class="section-description animate-on-scroll delay-1">
+            Họ giỏi, mình mê. Vậy thôi! hehe
+          </p>
+          
+          <div class="idols-container">
+            <div class="idols-sidebar animate-on-scroll delay-2">
+              <div class="idol-tab active" data-idol="dybala">
+                <h3 class="idol-tab-name">Paulo Dybala</h3>
+                <span class="idol-tab-role">Tiền đạo</span>
+              </div>
+              <div class="idol-tab" data-idol="mark">
+                <h3 class="idol-tab-name">Mark Zuckerberg</h3>
+                <span class="idol-tab-role">CEO Meta Platforms, Inc</span>
+              </div>
+              <div class="idol-tab" data-idol="Ada">
+                <h3 class="idol-tab-name">Ada Lovelace</h3>
+                <span class="idol-tab-role">Nhà tiên phong công nghệ</span>
+              </div>
+            </div>
+            
+            <div class="idols-content animate-on-scroll delay-3">
+              <div class="idol-card active" data-idol="dybala">
+                <div class="idol-image-container">
+                  <img src="./assets/images/dybala.webp" alt="Paulo Dybala" class="idol-image" />
+                </div>
+                <div class="idol-info">
+                  <h3 class="idol-name">Paulo Dybala</h3>
+                  <p class="idol-role">Tiền đạo</p>
+                  <p class="idol-description">Viên ngọc quý của bóng đá Argentina, nơi kỹ thuật, sáng tạo và bản năng săn bàn hòa quyện hoàn hảo. Mỗi lần ra sân, không chỉ thi đấu, anh trình diễn thứ bóng đá nghệ thuật khiến mọi khán giả phải trầm trồ. Và quan trọng anh ấy rất đẹp trai.</p>
+                </div>
+              </div>
+              
+              <div class="idol-card" data-idol="mark">
+                <div class="idol-image-container">
+                  <img src="./assets/images/mark.webp" alt="Mark Zuckerberg" class="idol-image" />
+                </div>
+                <div class="idol-info">
+                  <h3 class="idol-name">Mark Zuckerberg</h3>
+                  <p class="idol-role">Nhà sáng lập - CEO Facebook</p>
+                  <p class="idol-description">Bậc thầy kết nối thế giới, huyền thoại công nghệ, Chủ tịch Meta Platforms, Inc. — biểu tượng quyền lực của kỷ nguyên số.</p>
+                </div>
+              </div>
+              
+              <div class="idol-card" data-idol="Ada">
+                <div class="idol-image-container">
+                  <img src="./assets/images/nltv1.png" alt="Đặng Văn Lâm" class="idol-image" />
+                </div>
+                <div class="idol-info">
+                  <h3 class="idol-name">Ada Lovelace</h3>
+                  <p class="idol-role">Lập trình viên đầu tiên của nhân loại</p>
+                  <p class="idol-description">Lập trình viên đầu tiên của nhân loại, viết code từ khi máy tính còn là những bánh răng cơ khí. Khai sinh ra thế giới lập trình ❤️❤️❤️</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./assets/images/logo.png" alt="Lotus Logo" class="footer-logo-img" />
+            <span class="footer-logo-text">LOTUS</span>
+          </div>
+          
+          <div class="footer-info">
+            <p class="footer-credits">
+              LOTUS
+              <svg class="icon-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+              SVRL
+            </p>
+            <p class="footer-copyright">
+              © <span id="current-year"></span> 
+              ĐH_LOTUS 
+            </p> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <noscript><style>html{display: none;}</style></noscript>
+  </body>
+  
+</html>
+
