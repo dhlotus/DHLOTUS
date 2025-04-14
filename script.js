@@ -29,23 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     activateOnScroll();
   });
   
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a.nav-link').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const targetId = this.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - 80,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  
   // Gallery functionality
   setupGallery();
   
@@ -157,6 +140,26 @@ function activateOnScroll() {
     }
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const music = document.getElementById("bg-music");
+  let wasPlaying = false;
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      if (!music.paused) {
+        wasPlaying = true;
+        music.pause();
+      }
+    } else {
+      if (wasPlaying) {
+        music.play().catch(() => {
+          console.log("Không thể tự động phát lại. Người dùng cần tương tác.");
+        });
+        wasPlaying = false;
+      }
+    }
+  });
+});
 
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
@@ -178,3 +181,5 @@ document.addEventListener('keydown', function (event) {
       return false; 
   }  
 });
+
+
