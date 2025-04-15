@@ -314,6 +314,12 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
+  transition: all 0.4s ease;
+}
+.music-player:hover {
+  background: #7cac7c;
+  text-shadow: 0 0 8px rgb(0, 0, 0);
+  box-shadow: 0 0 26px #4f6d4f;
 }
 
 .music-player img {
@@ -323,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   object-fit: cover;  
   margin: 0 auto;
-  border: 2px solid #9149fc;
+  border: 2px solid #75d450b4;
   box-shadow: 0 0 10px black;
 }
 
