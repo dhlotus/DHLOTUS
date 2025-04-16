@@ -1,3 +1,13 @@
+// thanh tiến độ
+const progressBar = document.getElementById('progressBar');
+function updateProgressBar() {
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollTop = window.scrollY;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    progressBar.style.width = scrollPercent + '%';
+}
+// Lắng nghe sự kiện cuộn trang
+window.addEventListener('scroll', updateProgressBar);
 // DOM Elements
 document.addEventListener('DOMContentLoaded', function() {
   // Set current year in footer
@@ -205,5 +215,3 @@ document.addEventListener('keydown', function (event) {
       return false; 
   }  
 });
-
-
