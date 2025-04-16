@@ -38,36 +38,33 @@
     .gallery-grid {
       grid-template-columns: 1fr 1fr;
     }
-}
-@media (min-width: 768px) {
     .social-grid {
       grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 768px) {
+    }    
     .buddhism-content {
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
-}
-@media (min-width: 768px) {
-    .idols-container {
+        .idols-container {
       flex-direction: row;
     }
-}
-@media (min-width: 768px) {
     .footer-content {
       flex-direction: row;
       justify-content: space-between;
       text-align: left;
       align-items: flex-start;
     }
-}
-@media (min-width: 768px) {
     .footer-credits {
       justify-content: flex-start;
     }
+    .music-player:hover {
+      background: #7cac7c;
+      text-shadow: 0 0 8px rgb(0, 0, 0);
+      box-shadow: 0 0 26px #4f6d4f;
+    }
+
 }
+
 @media (min-width: 1024px) and (max-width: 1440px) {
     .hero-content{
       margin-top: 5%;
@@ -79,6 +76,7 @@
     .none-lt {
       display: none;
     }
+
 } 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -94,6 +92,13 @@
       font-size: 2rem;
     }
     
+    .main-nav {
+      display: none;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  
     .main-nav {
       display: none;
     }

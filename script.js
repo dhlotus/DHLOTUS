@@ -160,11 +160,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+// button mobile
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+const overlay = document.getElementById('overlay');
+const menuLinks = mobileMenu.querySelectorAll('a');
+
+function openMenu() {
+  mobileMenu.classList.add('open');
+  overlay.classList.add('show');
+}
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('open');
+  overlay.classList.remove('show');
+}
+
+menuToggle.addEventListener('click', openMenu);
+closeMenu.addEventListener('click', closeMobileMenu);
+overlay.addEventListener('click', closeMobileMenu);
+
+// Tự động đóng khi bấm vào link trong menu
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
 
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
-
 document.addEventListener('keydown', function(event) {
     if (event.key === "F12" || 
         (event.ctrlKey && event.shiftKey && event.key === "I") ||  
