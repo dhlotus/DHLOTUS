@@ -223,23 +223,23 @@ const heartFall = () => {
 setInterval(heartFall, 6000);
 
 //fix
-// document.addEventListener('contextmenu', function(event) {
-//     event.preventDefault();
-// });
-// document.addEventListener('keydown', function(event) {
-//     if (event.key === "F12" || 
-//         (event.ctrlKey && event.shiftKey && event.key === "I") ||  
-//         (event.ctrlKey && event.shiftKey && event.key === "J") ||  
-//         (event.ctrlKey && event.key === "U") 
-//        ) {
-//         event.preventDefault(); 
-//     }
-// });
-// // u
-// document.addEventListener('keydown', function (event) {
-//   if (event.ctrlKey && event.key.toLowerCase() === 'u') {
-//       event.preventDefault(); 
-//       return false; 
-//   }  
-// });
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+document.addEventListener('keydown', function(event) {
+    if (event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && event.key === "I") ||  
+        (event.ctrlKey && event.shiftKey && event.key === "J") ||  
+        (event.ctrlKey && event.key === "U") 
+       ) {
+        event.preventDefault(); 
+    }
+});
+// u
+document.addEventListener('keydown', function (event) {
+  if (event.ctrlKey && event.key.toLowerCase() === 'u') {
+      event.preventDefault(); 
+      return false; 
+  }  
+});
 

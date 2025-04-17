@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
   height: 100vh;
   display: flex;
-  background: linear-gradient(135deg, #d86b985b, #56a8d14f, #0045b43b);
+  background: linear-gradient(135deg, #d86b988e, #56a8d17e, #0045b470);
   align-items: center;
   justify-content: center;
   position: relative;
@@ -326,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gradient-text {
   background: linear-gradient(135deg, rgb(182, 135, 143) 0%, rgb(87, 87, 194) 100%);
-  font-weight: 700;
+  font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
