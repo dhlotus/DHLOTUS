@@ -195,7 +195,34 @@ overlay.addEventListener('click', closeMobileMenu);
 menuLinks.forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
+//falling flowers
+const icons = ["🌸", "🍂"];
 
+const heartFall = () => {
+  const heart = document.createElement("div");
+  heart.classList.add("falling-heart");
+  heart.innerText = icons[Math.floor(Math.random() * icons.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+  const duration = 18 + Math.random() * 2;
+  heart.style.animationDuration = duration + "s";
+
+  const size = 14 + Math.random() * 14;
+  heart.style.fontSize = size + "px";
+
+  document.body.appendChild(heart);
+
+  requestAnimationFrame(() => {
+    heart.classList.add("animate");
+  });
+
+  setTimeout(() => {
+    heart.remove();
+  }, duration * 1000);
+};
+setInterval(heartFall, 6000);
+
+//fix
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
 });
@@ -215,3 +242,4 @@ document.addEventListener('keydown', function (event) {
       return false; 
   }  
 });
+
