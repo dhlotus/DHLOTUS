@@ -927,21 +927,62 @@ h1, h2, h3, h4, h5, h6 {
 .idol-description {
   line-height: 1.8;
 }
+
+/* wrapend */
 .wrapend {
   font-family: 'Palatino Linotype', 'Georgia', serif;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: #2c2c2c;
   text-align: center;
   line-height: 1.8;
-  margin: 60px auto 60px auto;
+  margin: 60px auto;
   max-width: 720px;
-  padding: 20px 15px;
+  padding: 40px 30px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  opacity: 0.85;
+  opacity: 0.95;
   letter-spacing: 0.3px;
+  background-color: #fdf9e6;
+  background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
 }
+
+.wrapend::before, .wrapend::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #4b2a0bab;
+}
+
+.wrapend::before {
+  left: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.wrapend::after {
+  right: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.wrapend::before, .wrapend::after {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapend:hover {
+  color: #111;
+  transform: scale(1.05);
+}
+
 
 /* Footer */
 .footer {
