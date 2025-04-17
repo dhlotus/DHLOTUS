@@ -218,10 +218,10 @@ h1, h2, h3, h4, h5, h6 {
 .close-btn {
   background: none;
   border: none;
-  background: rgb(209, 159, 167);
-  padding: 2px 8px;
-  border-radius: 10px;
-  color: rgb(255, 223, 223);
+  background: rgb(194, 82, 99);
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.925);
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
@@ -251,10 +251,9 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   border: none;
   background: var(--primary-light);
-  color: rgb(221, 221, 221);
+  color: rgb(253, 253, 253);
   padding: 2px 12px;
-  border: 1px solid pink;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -1117,5 +1116,3 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
   }
 }
-
-

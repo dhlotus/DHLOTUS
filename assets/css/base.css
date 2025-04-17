@@ -78,28 +78,32 @@
     }
 
 } 
-/* Media Queries */
+
 @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-    
-    .hero-description {
-      font-size: 1rem;
-    }
-    
-    .section-heading {
-      font-size: 2rem;
-    }
-    
-    .main-nav {
-      display: none;
-    }
-    .menu-toggle {
-      display: block;
-    }
+  .hero-title {
+    font-size: 2.5rem;
+  }
   
-    .main-nav {
-      display: none;
-    }
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+  
+  .main-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  .wrapend {
+    font-size: 0.95rem;
+  }
+
 }
