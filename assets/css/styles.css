@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color: var(--foreground);
+  color: #a3aeff;
 }
 /* nav */
 .main-nav {
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--muted);
+  color: #acceff;
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 15px;
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  color: var(--primary);
+  color: var(--primary-light);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 10px rgba(255,255,255,0.4), inset 0 0 10px rgba(255,255,255,0.2);
 }
@@ -264,11 +264,23 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
   height: 100vh;
   display: flex;
-  background: linear-gradient(135deg, #d86b988e, #56a8d17e, #0045b470);
+  background: url("../images/backhome.avif") center no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative; /* Đảm bảo phần tử cha có position relative */
   overflow: hidden;
+}
+
+.hero-section::before {
+  content: ""; /* Tạo phần tử giả */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733); /* Tạo nền tối mờ (opacity 0.5) */
+  z-index: 0; /* Đảm bảo phần tử này ở dưới các phần tử khác */
 }
 
 .radial-bg {
@@ -325,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, rgb(182, 135, 143) 0%, rgb(87, 87, 194) 100%);
+  background: linear-gradient(135deg, rgb(241 184 193) 0%, rgb(117 117 255) 100%);
   font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -335,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-description {
   font-size: 1.25rem;
-  color: var(--muted);
+  color: #a7cbff;
   margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
