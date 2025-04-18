@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 36px;
   border-radius: 50%;
   border: 2px solid var(--primary-light);
-  box-shadow: 0 0 4px #000;
+  box-shadow: 0 0 6px #000;
 }
 
 .logo-text {
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.377); /* Tạo nền tối mờ (opacity 0.5) */
+  background-color: rgba(0, 0, 0, 0.473); /* Tạo nền tối mờ (opacity 0.5) */
   z-index: 0; /* Đảm bảo phần tử này ở dưới các phần tử khác */
 }
 
@@ -347,6 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-description {
   font-size: 1.25rem;
+  font-weight: 500;
   color: #a7cbff;
   margin-bottom: 2.5rem;
   max-width: 600px;
