@@ -222,6 +222,14 @@ const heartFall = () => {
 };
 setInterval(heartFall, 6000);
 
+// loading img
+  document.addEventListener("DOMContentLoaded", function () {
+    const imgs = document.querySelectorAll("img:not([loading])");
+    imgs.forEach(img => {
+      img.setAttribute("loading", "lazy");
+    });
+  });
+
 //fix
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault();
