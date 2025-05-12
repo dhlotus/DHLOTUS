@@ -1,28 +1,28 @@
 // thanh tiến độ
 const progressBar = document.getElementById('progressBar');
 function updateProgressBar() {
-    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollTop = window.scrollY;
-    const scrollPercent = (scrollTop / scrollHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollTop = window.scrollY;
+  const scrollPercent = (scrollTop / scrollHeight) * 100;
+  progressBar.style.width = scrollPercent + '%';
 }
 // Lắng nghe sự kiện cuộn trang
 window.addEventListener('scroll', updateProgressBar);
 // DOM Elements
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Set current year in footer
   document.getElementById('current-year').textContent = new Date().getFullYear();
-  
+
   // Header scroll effect
   const header = document.getElementById('header');
   let lastScrollTop = 0;
-  
-  window.addEventListener('scroll', function() {
+
+  window.addEventListener('scroll', function () {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
+
     if (scrollTop > 100) {
       header.classList.add('scrolled');
-      
+
       if (scrollTop > lastScrollTop) {
         header.classList.add('header-hidden');
       } else {
@@ -32,19 +32,19 @@ document.addEventListener('DOMContentLoaded', function() {
       header.classList.remove('scrolled');
       header.classList.remove('header-hidden');
     }
-    
+
     lastScrollTop = scrollTop;
-    
+
     // Activate elements when scrolled into view
     activateOnScroll();
   });
-  
+
   // Gallery functionality
   setupGallery();
-  
+
   // Idol tabs functionality
   setupIdolTabs();
-  
+
   // Initialize animations for elements in the viewport
   activateOnScroll();
 });
@@ -54,7 +54,7 @@ function setupGallery() {
   const thumbnails = document.querySelectorAll('.thumbnail');
   const featuredImages = document.querySelectorAll('.featured-image-container img');
   const dots = document.querySelectorAll('.gallery-dots .dot');
-  
+
   // Function to update active image
   function setActiveImage(index) {
     // Update thumbnails
@@ -63,36 +63,36 @@ function setupGallery() {
     if (thumbnails[activeThumbnailIndex]) {
       thumbnails[activeThumbnailIndex].classList.add('active');
     }
-    
+
     // Update featured image
     featuredImages.forEach(img => img.classList.remove('active'));
     if (featuredImages[index]) {
       featuredImages[index].classList.add('active');
     }
-    
+
     // Update dots
     dots.forEach(dot => dot.classList.remove('active'));
     if (dots[index]) {
       dots[index].classList.add('active');
     }
   }
-  
+
   // Click events for thumbnails
   thumbnails.forEach(thumbnail => {
-    thumbnail.addEventListener('click', function() {
+    thumbnail.addEventListener('click', function () {
       const index = parseInt(this.getAttribute('data-index'), 10);
       setActiveImage(index);
     });
   });
-  
+
   // Click events for dots
   dots.forEach(dot => {
-    dot.addEventListener('click', function() {
+    dot.addEventListener('click', function () {
       const index = parseInt(this.getAttribute('data-index'), 10);
       setActiveImage(index);
     });
   });
-  
+
   // Auto-rotate gallery images
   let currentIndex = 0;
   const galleryInterval = setInterval(() => {
@@ -105,17 +105,17 @@ function setupGallery() {
 function setupIdolTabs() {
   const idolTabs = document.querySelectorAll('.idol-tab');
   const idolCards = document.querySelectorAll('.idol-card');
-  
+
   idolTabs.forEach(tab => {
-    tab.addEventListener('click', function() {
+    tab.addEventListener('click', function () {
       // Remove active class from all tabs and cards
       idolTabs.forEach(t => t.classList.remove('active'));
       idolCards.forEach(c => c.classList.remove('active'));
-      
+
       // Add active class to clicked tab and corresponding card
       const idolId = this.getAttribute('data-idol');
       this.classList.add('active');
-      
+
       const correspondingCard = document.querySelector(`.idol-card[data-idol="${idolId}"]`);
       if (correspondingCard) {
         correspondingCard.classList.add('active');
@@ -127,14 +127,14 @@ function setupIdolTabs() {
 // Animation on scroll
 function activateOnScroll() {
   const animatedElements = document.querySelectorAll('.animate-on-scroll');
-  
+
   animatedElements.forEach(element => {
     const elementPosition = element.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-    
+
     if (elementPosition < windowHeight - 100) {
       element.classList.add('visible');
-      
+
       // Add delay classes if present
       if (element.classList.contains('delay-1')) {
         element.classList.add('visible-delay-1');
@@ -223,31 +223,31 @@ const heartFall = () => {
 setInterval(heartFall, 6000);
 
 // loading img
-  document.addEventListener("DOMContentLoaded", function () {
-    const imgs = document.querySelectorAll("img:not([loading])");
-    imgs.forEach(img => {
-      img.setAttribute("loading", "lazy");
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const imgs = document.querySelectorAll("img:not([loading])");
+  imgs.forEach(img => {
+    img.setAttribute("loading", "lazy");
   });
+});
 
 //fix
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
 });
-document.addEventListener('keydown', function(event) {
-    if (event.key === "F12" || 
-        (event.ctrlKey && event.shiftKey && event.key === "I") ||  
-        (event.ctrlKey && event.shiftKey && event.key === "J") ||  
-        (event.ctrlKey && event.key === "U") 
-       ) {
-        event.preventDefault(); 
-    }
+document.addEventListener('keydown', function (event) {
+  if (event.key === "F12" ||
+    (event.ctrlKey && event.shiftKey && event.key === "I") ||
+    (event.ctrlKey && event.shiftKey && event.key === "J") ||
+    (event.ctrlKey && event.key === "U")
+  ) {
+    event.preventDefault();
+  }
 });
 // u
 document.addEventListener('keydown', function (event) {
   if (event.ctrlKey && event.key.toLowerCase() === 'u') {
-      event.preventDefault(); 
-      return false; 
-  }  
+    event.preventDefault();
+    return false;
+  }
 });
 

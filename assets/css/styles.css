@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--foreground);
@@ -14,9 +16,11 @@ body {
   overflow-x: hidden;
   user-select: none;
 }
+
 .progress-bar {
   position: fixed;
-  bottom: 0; /* Đưa thanh tiến độ xuống dưới cùng */
+  bottom: 0;
+  /* Đưa thanh tiến độ xuống dưới cùng */
   left: 0;
   height: 5px;
   background-color: #da3e00;
@@ -24,6 +28,7 @@ body {
   z-index: 10;
   transition: width 0.1s;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -46,7 +51,12 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   line-height: 1.3;
@@ -131,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   color: #a3aeff;
 }
+
 /* nav */
 .main-nav {
   display: flex;
@@ -162,14 +173,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   transition: all 0.3s ease;
   position: relative;
-  background: linear-gradient(145deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   box-shadow: inset 0 0 10px rgba(165, 165, 165, 0.3);
 }
 
 .nav-link:hover {
   color: var(--primary-light);
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(255,255,255,0.4), inset 0 0 10px rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .nav-link::after {
@@ -188,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link:hover::after {
   width: 60%;
 }
+
 /* Menu mobile ẩn bên trái */
 .mobile-menu {
   position: fixed;
@@ -200,20 +212,24 @@ h1, h2, h3, h4, h5, h6 {
   transition: left 0.3s ease;
   z-index: 1001;
 }
+
 .mobile-menu.open {
   left: 0;
 }
+
 .mobile-menu li {
-  margin-bottom: 14px; 
+  margin-bottom: 14px;
   color: #04164e;
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(255,255,255,0.4), inset 0 0 10px rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.2);
 }
-.mobile-menu a{
-    display: block;
-    width: 100%;
-    text-align: center;
+
+.mobile-menu a {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
+
 /* Nút đóng (X) */
 .close-btn {
   background: none;
@@ -257,9 +273,11 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .menu-toggle:hover {
-  background: #6c7dff;
+  background: #5e70fa;
 }
+
 /* Hero Section */
 .hero-section {
   height: 100vh;
@@ -268,19 +286,23 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   align-items: center;
   justify-content: center;
-  position: relative; /* Đảm bảo phần tử cha có position relative */
+  position: relative;
+  /* Đảm bảo phần tử cha có position relative */
   overflow: hidden;
 }
 
 .hero-section::before {
-  content: ""; /* Tạo phần tử giả */
+  content: "";
+  /* Tạo phần tử giả */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.473); /* Tạo nền tối mờ (opacity 0.5) */
-  z-index: 0; /* Đảm bảo phần tử này ở dưới các phần tử khác */
+  background-color: rgba(0, 0, 0, 0.473);
+  /* Tạo nền tối mờ (opacity 0.5) */
+  z-index: 0;
+  /* Đảm bảo phần tử này ở dưới các phần tử khác */
 }
 
 .radial-bg {
@@ -393,13 +415,15 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--muted);
   animation: hover-float 2s ease-in-out infinite;
 }
+
 /* music */
 
-.music{
+.music {
   display: flex;
   justify-content: center;
   padding: 6rem 1rem 3rem;
 }
+
 .music-player {
   width: 400px;
   background: #9149fc;
@@ -416,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
-  object-fit: cover;  
+  object-fit: cover;
   margin: 0 auto;
   border: 2px solid #75d450b4;
   box-shadow: 0 0 10px black;
@@ -431,6 +455,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   margin-top: 10px;
 }
+
 /* Gallery Section */
 .gallery-section {
   padding: 6rem 0;
@@ -598,6 +623,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 64rem;
   margin: 0 auto;
 }
+
 .social-card {
   position: relative;
   overflow: hidden;
@@ -673,9 +699,11 @@ h1, h2, h3, h4, h5, h6 {
 .facebook-glow {
   background: linear-gradient(to bottom right, #3b82f6, #3b5998);
 }
+
 .mess-glow {
-  background: linear-gradient(to bottom left,  #ff47c8b4,#46e3ff91);
+  background: linear-gradient(to bottom left, #ff47c8b4, #46e3ff91);
 }
+
 .tiktok-glow {
   background: linear-gradient(to bottom right, #ec4899, #9333ea);
 }
@@ -732,6 +760,7 @@ h1, h2, h3, h4, h5, h6 {
 .facebook-btn {
   background: linear-gradient(to right, #3b82f6, #3b5998);
 }
+
 .mess-btn {
   background: linear-gradient(to right, #2a7fce, #aa4fff);
 }
@@ -846,6 +875,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 2rem;
   margin-top: 3rem;
 }
+
 .idols-sidebar {
   flex: 1;
 }
@@ -959,14 +989,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fdf9e6;
   background-image: url('https://www.transparenttextures.com/patterns/paper.png');
   background-size: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
 }
 
-.wrapend::before, .wrapend::after {
+.wrapend::before,
+.wrapend::after {
   content: '';
   position: absolute;
   top: 0;
@@ -986,7 +1017,9 @@ h1, h2, h3, h4, h5, h6 {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.wrapend::before, .wrapend::after {
+
+.wrapend::before,
+.wrapend::after {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -1048,11 +1081,21 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
   animation: glitch 1s infinite;
 }
+
 @keyframes glitch {
-  0% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
-  50% { text-shadow: 0 0 10px #ff0, 0 0 20px #ff0; }
-  100% { text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; }
+  0% {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+
+  50% {
+    text-shadow: 0 0 10px #ff0, 0 0 20px #ff0;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
 }
+
 .icon-heart {
   color: #ef4444;
   width: 18px;
@@ -1071,6 +1114,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1078,18 +1122,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes hover-float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
 }
 
 @keyframes pulse-soft {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }
@@ -1149,6 +1199,7 @@ h1, h2, h3, h4, h5, h6 {
 .animate-on-scroll.visible-delay-5 {
   transition-delay: 0.5s;
 }
+
 .falling-heart {
   position: fixed;
   top: -30px;
@@ -1165,6 +1216,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
+
   100% {
     transform: translateY(150vh) rotate(360deg);
     opacity: 0;
