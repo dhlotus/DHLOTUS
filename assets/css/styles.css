@@ -140,6 +140,8 @@ h6 {
   font-size: 1.5rem;
   letter-spacing: 1px;
   color: #a3aeff;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #8f8f8f;
 }
 
 /* nav */
@@ -1061,8 +1063,10 @@ h6 {
 .footer-logo-text {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   letter-spacing: 1px;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
 }
 
 .footer-info {
