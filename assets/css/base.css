@@ -114,6 +114,12 @@
     display: none;
   }
 
+  .messages {
+    margin: 20px auto;
+    padding: 20px 15px;
+    max-width: 90%;
+  }
+
   .wrapend {
     font-family: 'Palatino Linotype', 'Georgia', serif;
     font-size: 0.95rem;
@@ -134,6 +140,4 @@
   .wrapend::after {
     display: none;
   }
-
-
 }
