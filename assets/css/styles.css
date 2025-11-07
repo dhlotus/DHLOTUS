@@ -370,13 +370,35 @@ h6 {
 }
 
 .hero-description {
-  font-size: 1.25rem;
-  font-weight: 500;
+  position: relative;
+  font-size: 1.45rem;
+  font-weight: bolder;
   color: #a7cbff;
+  border-right: 2px solid #a7cbff;
   margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  width: 26ch;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 3.8s steps(26) infinite alternate-reverse,
+    blink 0.8s step-end infinite;
+  ;
+}
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .hero-cta {
